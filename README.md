@@ -2,9 +2,9 @@
 
 ## 🤖 Project Assignment Automation System
 
-This system automates the assignment of the most suitable employee (agent) to a newly created project based on their skills, availability, past performance, and leave status. The project integrates tools like **Jira**, **HRMS**, **LLM Guard**, and **Langfuse** to ensure efficient task management, employee utilization, and AI safety.
+This system automates the assignment of the most suitable employee (agent) to a newly created project based on their skills, availability, past performance, and leave status. The project integrates tools like **Jira**, **HRMS**, a **Security Layer**, and **LLM Monitoring** to ensure efficient task management, employee utilization, and AI safety.
 
-
+---
 
 ## 📌 Table of Contents
 
@@ -13,14 +13,14 @@ This system automates the assignment of the most suitable employee (agent) to a 
 - [Key Features](#-key-features)
 - [Technology Stack](#-technology-stack)
 - [Data Flow](#-data-flow)
-- [Security (LLM Guard)](#-security-llm-guard)
-- [LLM Usage Tracking (Langfuse)](#-llm-usage-tracking-langfuse)
+- [Security Layer](#-security-layer)
+- [LLM Monitoring](#-llm-monitoring)
 - [Setup Instructions](#-setup-instructions)
 - [Environment Variables](#-environment-variables)
 - [Future Enhancements](#-future-enhancements)
 - [License](#-license)
 
-
+---
 
 ## 📖 Overview
 
@@ -32,12 +32,12 @@ When a new project request is created (e.g., via Jira), the system intelligently
 
 The selected employee is then automatically assigned to the project, reducing manual workload and improving efficiency.
 
-This system also ensures **LLM interaction security** and **cost monitoring** using dedicated tools:
+This system also ensures **LLM interaction security** and **usage monitoring** using:
 
-- 🛡 **LLM Guard**: To protect prompt interactions
-- 📊 **Langfuse**: To monitor usage and cost of LLM APIs
+- 🛡 A **Security Layer** to protect prompt interactions
+- 📊 An **LLM Monitoring** tool to track usage and costs
 
-
+---
 
 ## 🔧 Workflow Diagram
 
@@ -72,32 +72,32 @@ This system also ensures **LLM interaction security** and **cost monitoring** us
            |
            v
 +-----------------------------+
-|  LLM Guard & Langfuse       |
+|  Security Layer &           |
+|  LLM Monitoring             |
 +-----------------------------+
-
 ```
 
 ## 🚀 Key Features
 
 - ✅ Automated agent assignment based on live data
 - 🔄 Jira + HRMS integration
-- 🔐 Prompt & output security with LLM Guard
-- 📊 Token usage & cost tracking with Langfuse
+- 🔐 Prompt & output security with Security Layer
+- 📊 Token usage & cost tracking with LLM Monitoring
 - 🔍 Employee performance analytics
 
 
 
 ## ⚙️ Technology Stack
 
-| Component       | Technology                          |
-|-----------------|--------------------------------------|
-| Backend         | Python / Node.js                     |
-| Task Manager    | Jira (REST API)                      |
-| HR Data Source  | HRMS (e.g., Odoo or custom API)      |
-| AI Security     | LLM Guard                            |
-| LLM Monitoring  | Langfuse                             |
-| Optional LLM    | OpenAI / Anthropic / Local LLM       |
-| Database        | PostgreSQL / MongoDB (optional)      |
+| Component       | Technology                                 |
+|-----------------|--------------------------------------------|
+| Backend         | Python / Node.js / Html / CSS / Javascript |                   |
+| Task Manager    | Jira (REST API)                            |
+| HR Data Source  | HRMS             | 
+| AI Security     | Security Layer                                |
+| LLM Monitoring  | LLM Monitoring                                  |
+| Optional LLM    | OpenAI / Anthropic / Local LLM             |
+| Database        | PostgreSQL / MongoDB (optional)            |
 
 
 
@@ -113,19 +113,19 @@ This system also ensures **LLM interaction security** and **cost monitoring** us
 
 
 
-## 🔐 LLM Security – LLM Guard
+## 🔐 LLM Security
 
 LLM Guard is used to:
 
-- 🛡 Prevent prompt injection
-- 🚫 Mask sensitive data
-- 🧼 Sanitize output for safety
+- 🛡 Prevents prompt injection
+- 🚫 Masks sensitive data
+- 🧼 Sanitizes prompts and responses
 
 It ensures all LLM interactions are protected before reaching the model.
 
 
 
-## 📊 LLM Usage Tracking – Langfuse
+## 📊 LLM Usage Tracking 
 
 Langfuse provides:
 
@@ -133,8 +133,6 @@ Langfuse provides:
 - 💸 Cost tracking by user, model, or session
 - ⏱ Performance metrics
 - 📈 Visual analytics dashboard
-
-Langfuse integration helps manage your LLM budget efficiently.
 
 
 ## 📈 Future Enhancements
@@ -150,20 +148,6 @@ Langfuse integration helps manage your LLM budget efficiently.
 
 - 🧩 **Modular HRMS Plug-ins**  
   Allow easy integration with various HRMS platforms (Odoo, Zoho, SAP, etc.) via plugin architecture.
-
-
-## 🤝 Contributing
-
-We welcome contributions from the community! To contribute:
-
-1. **Fork** this repository.
-2. **Create a new branch** for your feature or fix.  
-   Example: `feature/improve-matching-logic`
-3. **Make your changes** and ensure the app runs smoothly.
-4. **Submit a pull request** with a clear description of your changes.
-
-> All contributions are reviewed and merged based on code quality and alignment with the project goals.
-
 
 
 ## 📝 License
