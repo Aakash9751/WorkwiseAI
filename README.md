@@ -137,26 +137,6 @@ Langfuse provides:
 Langfuse integration helps manage your LLM budget efficiently.
 
 
-
-## 🛠️ Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/project-assignment-automation.git
-cd project-assignment-automation
-```
-
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. For Node.js (if applicable)
-```bash
-npm install
-```
-
 ## 📈 Future Enhancements
 
 - 🤖 **AI Model Scoring**  
